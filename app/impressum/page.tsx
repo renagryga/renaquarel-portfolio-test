@@ -1,14 +1,11 @@
 export default function Impressum() {
   return (
-    <main className="legalPage">
-      <a href="../">← Zurück</a>
-      <h1>Impressum</h1>
-      <p>Bitte hier deine rechtlich erforderlichen Angaben eintragen.</p>
-      <p>
-        Rena Gryga<br />
-        DEINE ANSCHRIFT<br />
-        DEINE E-MAIL
-      </p>
+    <main style={{display:"flex",justifyContent:"center",padding:"2rem"}}>
+      <img
+        src="/images/impressum.png"
+        alt="Impressum"
+        style={{maxWidth:"900px",width:"100%"}}
+      />
     </main>
   );
 }
