@@ -16,7 +16,7 @@ export default function Home() {
       <main id="top">
         <section className="hero" aria-label="Portfolio-Titelseite">
           <img
-            src="images/hero/hero.jpg"
+            src="images/hero/hero.JPG"
             alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
             className="heroImage"
           />
