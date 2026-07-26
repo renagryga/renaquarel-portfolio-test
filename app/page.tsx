@@ -44,7 +44,7 @@ export default function Home() {
           <h2>Lass uns Geschichten erzählen.</h2>
           <div className="contactLinks">
             <a href="mailto:info@renaquarel.de">E-Mail</a>
-            <a href="https://DEIN-ETSY-LINK" target="_blank" rel="noreferrer">Etsy-Shop</a>
+            <a href="https://renaquarel.etsy.com" target="_blank" rel="noreferrer">Etsy-Shop</a>
           </div>
         </section>
       </main>
