@@ -9,7 +9,7 @@ export default function Home() {
           <a href="#portfolio">Portfolio</a>
           <a href="#about">Über mich</a>
           <a href="#contact">Kontakt</a>
-          <a href="https://DEIN-ETSY-LINK" target="_blank" rel="noreferrer">Shop</a>
+          <a href="https://renaquarel.etsy.com" target="_blank" rel="noreferrer">Shop</a>
         </nav>
       </header>
 
@@ -43,7 +43,7 @@ export default function Home() {
           <p className="sectionLabel">Kontakt</p>
           <h2>Lass uns Geschichten erzählen.</h2>
           <div className="contactLinks">
-            <a href="mailto:DEINE-EMAIL@BEISPIEL.DE">E-Mail</a>
+            <a href="mailto:info@renaquarel.de">E-Mail</a>
             <a href="https://DEIN-ETSY-LINK" target="_blank" rel="noreferrer">Etsy-Shop</a>
           </div>
         </section>
