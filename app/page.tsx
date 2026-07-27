@@ -1,18 +1,13 @@
-const basePath =
-  process.env.NODE_ENV === "production"
-    ? "/renaquarel-portfolio-test"
-    : "";
-
 export default function Home() {
   return (
     <section className="landingPage">
       <a
-        href={`${basePath}/portfolio/`}
+        href="./portfolio/"
         className="landingCoverLink"
         aria-label="Portfolio öffnen"
       >
         <img
-          src={`${basePath}/images/hero/hero.JPG`}
+          src="./images/hero/hero.JPG"
           alt="Portfolio von Rena Quarel"
           className="landingCover"
         />
