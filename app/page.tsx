@@ -1,17 +1,29 @@
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/renaquarel-portfolio-test"
+    : "";
+
 export default function Home() {
   return (
-    <section className="landingPage">
+    <main className="landingPage">
       <a
-        href="./portfolio/"
+        href={`${basePath}/portfolio/`}
         className="landingCoverLink"
-        aria-label="Portfolio öffnen"
+        aria-label="Portfolio von Rena Quarel öffnen"
       >
-        <img
-          src="./images/hero/hero.JPG"
-          alt="Portfolio von Rena Quarel"
-          className="landingCover"
-        />
+        <picture>
+          <source
+            media="(max-width: 700px)"
+            srcSet={`${basePath}/images/hero/hero-mobile.jpg`}
+          />
+
+          <img
+            src={`${basePath}/images/hero/hero-desktop.jpg`}
+            alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
+            className="landingCover"
+          />
+        </picture>
       </a>
-    </section>
+    </main>
   );
 }
