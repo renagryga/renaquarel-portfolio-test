@@ -1,130 +1,285 @@
-  :root {
-      --white:#fff;
-      --black:#111;
-      --grey:#666;
-      --max-width:1100px;
-      --text-width:700px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:#fff;color:#111;font-family:Arial,Helvetica,sans-serif}
-    a{text-decoration:none;color:inherit}
-    img{display:block;max-width:100%}
+:root {
+  --white: #ffffff;
+  --black: #111111;
+  --grey: #666666;
+  --max-width: 1100px;
+  --text-width: 700px;
+}
 
-    .siteHeader{
-    position:fixed;
-    top:24px;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    z-index:100;
-    }
-    .siteHeader nav{display:flex;gap:32px}
-    .siteHeader a{font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+* {
+  box-sizing: border-box;
+}
 
-    .siteFooter{
-    position:fixed;
-    bottom:20px;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    gap:24px;
-    font-size:11px;
-    color:#777;
-    }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+  color: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    .landingPage{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:24px;
-    background:white;
-    }
+body {
+  min-height: 100vh;
+}
 
-    .landingCoverLink{
-    display:block;
-    width:100%;
-    max-width:900px;
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-    .landingCover{
-    display:block;
-    width:100%;
-    height:auto;
-    }
+img {
+  display: block;
+  max-width: 100%;
+}
 
-    .pageShell{
-    width:min(var(--max-width),calc(100% - 48px));
-    margin:0 auto;
-    padding:100px 0;
-    }
+/* Navigation */
 
-    .pageTopline{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:50px;
-    font-size:12px;
-    text-transform:uppercase;
-    letter-spacing:.08em;
-    }
+.siteHeader {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
 
-    .projectHeader{
-    margin-bottom:40px;
-    }
+.siteHeader nav {
+  display: flex;
+  gap: 32px;
+}
 
-    .projectHeader h1{
-    font-weight:400;
-    font-size:34px;
-    margin:0 0 16px;
-    }
+.siteHeader a {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
-    .projectHeader p{
-    max-width:600px;
-    color:var(--grey);
-    line-height:1.8;
-    }
+/* Footer */
 
-    .projectImageList{
-    display:flex;
-    flex-direction:column;
-    gap:36px;
-    }
+.siteFooter {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  padding: 0 20px;
+  color: #777777;
+  font-size: 11px;
+}
 
-    .projectImageList img{
-    width:100%;
-    height:auto;
-    }
+/* Startseite */
 
-    .textContent{
-    max-width:var(--text-width);
-    margin:auto;
-    }
+.landingPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 70px 24px;
+  background: var(--white);
+}
 
-    .textContent h1{
-    font-size:36px;
-    font-weight:400;
-    }
+.landingCoverLink {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+}
 
-    .textContent p{
-    line-height:1.8;
-    color:#555;
-    }
+.landingCover {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
-    .legalImages{
-    display:flex;
-    justify-content:center;
-    }
+/* Allgemeiner Seitenrahmen */
 
-    .legalImages img{
-    width:min(900px,100%);
-    height:auto;
-    }
+.pageShell {
+  width: min(var(--max-width), calc(100% - 48px));
+  margin: 0 auto;
+  padding: 80px 0 100px;
+}
 
-    @media(max-width:700px){
-    .pageShell{padding:80px 0;width:calc(100% - 32px);}
-    .projectHeader h1{font-size:26px;}
-    .siteHeader nav{gap:18px;}
-    .siteFooter{gap:18px;font-size:10px;}
-    }
+.pageTopline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Portfolio-Übersicht */
+
+.portfolioOverview {
+  max-width: 1000px;
+}
+
+.projectOverviewList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px 40px;
+}
+
+.projectPreview {
+  min-width: 0;
+  margin: 0;
+}
+
+.projectPreview a {
+  display: block;
+}
+
+.projectPreview img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  object-position: center;
+  background: var(--white);
+}
+
+.projectPreview h1 {
+  margin: 18px 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Einzelne Projekte */
+
+.projectHeader {
+  margin-bottom: 40px;
+}
+
+.projectHeader h1 {
+  margin: 0 0 16px;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.projectHeader p {
+  max-width: 600px;
+  margin: 0;
+  color: var(--grey);
+  line-height: 1.8;
+}
+
+.projectImageList {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.projectImageList img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Textseiten */
+
+.textContent {
+  max-width: var(--text-width);
+  margin: 0 auto;
+}
+
+.textContent h1 {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.textContent p {
+  color: #555555;
+  line-height: 1.8;
+}
+
+/* Impressum und Datenschutz */
+
+.legalImages {
+  display: flex;
+  justify-content: center;
+}
+
+.legalImages img {
+  width: min(900px, 100%);
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobil */
+
+@media (max-width: 700px) {
+  .siteHeader {
+    top: 18px;
+  }
+
+  .siteHeader nav {
+    gap: 18px;
+  }
+
+  .siteHeader a {
+    font-size: 11px;
+  }
+
+  .siteFooter {
+    bottom: 14px;
+    gap: 18px;
+    font-size: 10px;
+  }
+
+  .landingPage {
+    min-height: 100svh;
+    padding: 65px 16px 55px;
+  }
+
+  .landingCoverLink {
+    max-width: 100%;
+  }
+
+  .pageShell {
+    width: calc(100% - 32px);
+    padding: 70px 0 85px;
+  }
+
+  .pageTopline {
+    margin-bottom: 34px;
+  }
+
+  .projectOverviewList {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .projectPreview img {
+    width: 100%;
+    height: auto;
+    max-height: 70svh;
+    object-fit: contain;
+  }
+
+  .projectPreview h1 {
+    margin-top: 14px;
+    font-size: 17px;
+  }
+
+  .projectHeader h1 {
+    font-size: 26px;
+  }
+
+  .textContent h1 {
+    font-size: 28px;
+  }
+
+  .projectImageList {
+    gap: 24px;
+  }
+}
