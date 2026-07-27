@@ -8,13 +8,13 @@ export default function Home() {
     <section className="landingPage">
       <a
         href={`${basePath}/portfolio/`}
-        className="portfolioCoverLink"
+        className="landingCoverLink"
         aria-label="Portfolio öffnen"
       >
         <img
           src={`${basePath}/images/hero/hero.JPG`}
           alt="Portfolio von Rena Quarel"
-          className="portfolioCover"
+          className="landingCover"
         />
       </a>
     </section>
