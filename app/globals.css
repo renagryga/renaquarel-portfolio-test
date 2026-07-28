@@ -356,4 +356,13 @@ img {
   .projectImageList {
     gap: 24px;
   }
+  
+}.contactLink {
+  color: #111111;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.contactLink:hover {
+  color: #666666;
 }
