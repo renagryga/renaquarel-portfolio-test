@@ -1,4 +1,12 @@
+"use client";
+
 export default function Home() {
+  function openPortfolio() {
+    window.location.assign(
+      "/renaquarel-portfolio-test/portfolio/"
+    );
+  }
+
   return (
     <main
       style={{
@@ -6,38 +14,39 @@ export default function Home() {
         margin: 0,
         padding: "16px",
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        overflow: "hidden",
         backgroundColor: "#ffffff",
       }}
     >
-      <a
-        href="/renaquarel-portfolio-test/portfolio/"
+      <button
+        type="button"
+        onClick={openPortfolio}
         aria-label="Portfolio von Rena Quarel öffnen"
         style={{
           display: "block",
           width: "100%",
           maxWidth: "520px",
-          position: "relative",
-          zIndex: 9999,
+          margin: 0,
+          padding: 0,
+          border: "none",
+          background: "transparent",
           cursor: "pointer",
         }}
       >
         <img
-          src="/renaquarel-portfolio-test/images/hero/hero-mobile.jpg?v=10"
+          src="/renaquarel-portfolio-test/images/hero/hero-mobile.jpg?v=30"
           alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
           style={{
             display: "block",
             width: "100%",
-            maxWidth: "100%",
             height: "auto",
             maxHeight: "calc(100svh - 32px)",
             objectFit: "contain",
-            margin: 0,
           }}
         />
-      </a>
+      </button>
     </main>
   );
 }
