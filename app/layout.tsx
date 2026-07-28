@@ -1,36 +1,24 @@
-import type { Viewport } from "next";
+import type { Metadata, Viewport } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Rena Quarel",
+  description: "Portfolio von Rena Quarel – Illustratorin und Autorin",
+};
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
 
-const basePath =
-  process.env.NODE_ENV === "production"
-    ? "/renaquarel-portfolio-test"
-    : "";
-
-export default function Home() {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <main className="landingPage">
-      <a
-        href={`${basePath}/portfolio/`}
-        className="landingCoverLink"
-        aria-label="Portfolio von Rena Quarel öffnen"
-      >
-        <picture>
-          <source
-            media="(max-width: 700px)"
-            srcSet={`${basePath}/images/hero/hero-mobile.jpg?v=20`}
-          />
-
-          <img
-            src={`${basePath}/images/hero/hero-desktop.jpg?v=20`}
-            alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
-            className="landingCover"
-          />
-        </picture>
-      </a>
-    </main>
+    <html lang="de">
+      <body>{children}</body>
+    </html>
   );
 }
