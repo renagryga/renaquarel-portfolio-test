@@ -1,3 +1,10 @@
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 const basePath =
   process.env.NODE_ENV === "production"
     ? "/renaquarel-portfolio-test"
