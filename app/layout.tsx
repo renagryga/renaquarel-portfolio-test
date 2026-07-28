@@ -18,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>{children}
+      <footer className="siteFooter">
+  <a href={`${basePath}/impressum`}>Impressum</a>
+  <a href={`${basePath}/datenschutz`}>Datenschutz</a>
+</footer>
+      
+      </body>
     </html>
   );
 }
