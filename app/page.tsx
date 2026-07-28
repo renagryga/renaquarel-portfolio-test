@@ -6,6 +6,14 @@ const basePath =
 export default function Home() {
   return (
     <main className="landingPage">
+      <nav className="landingNav" aria-label="Hauptnavigation">
+        <a href={`${basePath}/portfolio/`}>Portfolio</a>
+        <a href={`${basePath}/kontakt/`}>Kontakt</a>
+        <a href="https://www.etsy.com/" target="_blank" rel="noreferrer">
+          Shop
+        </a>
+      </nav>
+
       <a
         href={`${basePath}/portfolio/`}
         className="landingCoverLink"
@@ -24,6 +32,11 @@ export default function Home() {
           />
         </picture>
       </a>
+
+      <footer className="landingFooter">
+        <a href={`${basePath}/impressum/`}>Impressum</a>
+        <a href={`${basePath}/datenschutz/`}>Datenschutz</a>
+      </footer>
     </main>
   );
 }
