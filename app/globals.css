@@ -70,16 +70,12 @@ img {
   width: 100%;
   padding: 0 20px;
   color: #777777;
-  font-size: .landingPage {
-  min-height: 100svh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 70px 24px;
-  background: #ffffff;
+  font-size: 11px;
 }
 
-..landingPage {
+/* Startseite */
+
+.landingPage {
   min-height: 100svh;
   display: flex;
   align-items: center;
@@ -109,19 +105,6 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
-}
-
-@media (max-width: 700px) {
-  .landingCoverLink {
-    max-width: 520px;
-  }
-
-  .landingCover {
-    width: 100%;
-    height: auto;
-    max-height: calc(100svh - 32px);
-    object-fit: contain;
-  }
 }
 
 /* Allgemeiner Seitenrahmen */
@@ -169,14 +152,13 @@ img {
   height: 420px;
   object-fit: contain;
   object-position: center;
-  background: var(--white);
+  background: #ffffff;
 }
 
 .projectPreview h1 {
   margin: 18px 0 0;
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: 0.01em;
 }
 
 /* Einzelne Projekte */
@@ -205,7 +187,6 @@ img {
 }
 
 .projectImageList img {
-  display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -263,13 +244,15 @@ img {
     font-size: 10px;
   }
 
-  .landingPage {
-    min-height: 100svh;
-    padding: 65px 16px 55px;
+  .landingCoverLink {
+    max-width: 520px;
   }
 
-  .landingCoverLink {
-    max-width: 100%;
+  .landingCover {
+    width: 100%;
+    height: auto;
+    max-height: calc(100svh - 32px);
+    object-fit: contain;
   }
 
   .pageShell {
