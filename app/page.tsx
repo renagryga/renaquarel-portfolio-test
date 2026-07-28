@@ -1,52 +1,29 @@
-"use client";
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/renaquarel-portfolio-test"
+    : "";
 
 export default function Home() {
-  function openPortfolio() {
-    window.location.assign(
-      "/renaquarel-portfolio-test/portfolio/"
-    );
-  }
-
   return (
-    <main
-      style={{
-        minHeight: "100svh",
-        margin: 0,
-        padding: "16px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "#ffffff",
-      }}
-    >
-      <button
-        type="button"
-        onClick={openPortfolio}
+    <main className="landingPage">
+      <a
+        href={`${basePath}/portfolio/`}
+        className="landingCoverLink"
         aria-label="Portfolio von Rena Quarel öffnen"
-        style={{
-          display: "block",
-          width: "100%",
-          maxWidth: "520px",
-          margin: 0,
-          padding: 0,
-          border: "none",
-          background: "transparent",
-          cursor: "pointer",
-        }}
       >
-        <img
-          src="/renaquarel-portfolio-test/images/hero/hero-mobile.jpg?v=30"
-          alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
-          style={{
-            display: "block",
-            width: "100%",
-            height: "auto",
-            maxHeight: "calc(100svh - 32px)",
-            objectFit: "contain",
-          }}
-        />
-      </button>
+        <picture>
+          <source
+            media="(max-width: 700px)"
+            srcSet={`${basePath}/images/hero/hero-mobile.jpg?v=40`}
+          />
+
+          <img
+            src={`${basePath}/images/hero/hero-desktop.jpg?v=40`}
+            alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
+            className="landingCover"
+          />
+        </picture>
+      </a>
     </main>
   );
 }
