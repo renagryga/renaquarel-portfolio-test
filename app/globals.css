@@ -301,6 +301,24 @@ img {
     object-fit: contain;
   }
 
+  .landingNav {
+  top: 18px;
+  gap: 20px;
+}
+
+.landingNav a {
+  font-size: 10px;
+}
+
+.landingFooter {
+  bottom: 14px;
+  gap: 18px;
+}
+
+.landingFooter a {
+  font-size: 9px;
+}
+
   .pageShell {
     width: calc(100% - 32px);
     padding: 70px 0 85px;
