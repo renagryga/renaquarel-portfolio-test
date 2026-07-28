@@ -9,7 +9,7 @@ export default function Home() {
       <nav className="landingNav" aria-label="Hauptnavigation">
         <a href={`${basePath}/portfolio/`}>Portfolio</a>
         <a href={`${basePath}/kontakt/`}>Kontakt</a>
-        <a href="https://www.etsy.com/" target="_blank" rel="noreferrer">
+        <a href="https://renaquarel.etsy.com" target="_blank" rel="noreferrer">
           Shop
         </a>
       </nav>
