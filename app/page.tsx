@@ -1,28 +1,42 @@
-const basePath =
-  process.env.NODE_ENV === "production"
-    ? "/renaquarel-portfolio-test"
-    : "";
-
 export default function Home() {
   return (
-    <main className="landingPage">
+    <main
+      style={{
+        minHeight: "100svh",
+        margin: 0,
+        padding: "16px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+        backgroundColor: "#ffffff",
+      }}
+    >
       <a
-        href={`${basePath}/portfolio/`}
-        className="landingCoverLink"
+        href="/renaquarel-portfolio-test/portfolio/"
         aria-label="Portfolio von Rena Quarel öffnen"
+        style={{
+          display: "block",
+          width: "100%",
+          maxWidth: "520px",
+          position: "relative",
+          zIndex: 9999,
+          cursor: "pointer",
+        }}
       >
-        <picture>
-          <source
-            media="(max-width: 700px)"
-            srcSet={`${basePath}/images/hero/hero-mobile.jpg?v=3`}
-          />
-
-          <img
-            src={`${basePath}/images/hero/hero-desktop.jpg?v=3`}
-            alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
-            className="landingCover"
-          />
-        </picture>
+        <img
+          src="/renaquarel-portfolio-test/images/hero/hero-mobile.jpg?v=10"
+          alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
+          style={{
+            display: "block",
+            width: "100%",
+            maxWidth: "100%",
+            height: "auto",
+            maxHeight: "calc(100svh - 32px)",
+            objectFit: "contain",
+            margin: 0,
+          }}
+        />
       </a>
     </main>
   );
