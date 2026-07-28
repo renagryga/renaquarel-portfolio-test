@@ -49,16 +49,7 @@ export default function KontaktPage() {
           </a>
         </p>
 
-        <p>
-          <a
-            href="https://renaquarel.etsy.com"
-            target="_blank"
-            rel="noreferrer"
-            className="contactLink"
-          >
-            renaquarel.etsy.com
-          </a>
-        </p>
+     
       </section>
     </main>
   );
