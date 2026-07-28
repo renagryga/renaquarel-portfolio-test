@@ -1,6 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/renaquarel-portfolio-test"
+    : "";
+
 export const metadata: Metadata = {
   title: "Rena Quarel",
   description: "Portfolio von Rena Quarel – Illustratorin und Autorin",
