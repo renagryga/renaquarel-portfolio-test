@@ -26,7 +26,7 @@ const projects = [
 
 export default function PortfolioPage() {
   return (
-    <div className="pageShell portfolioOverview">
+    <main className="pageShell portfolioOverview">
       <div className="pageTopline">
         <a href={`${basePath}/`}>← Start</a>
         <span>Portfolio</span>
@@ -42,6 +42,6 @@ export default function PortfolioPage() {
           </article>
         ))}
       </div>
-    </div>
+    </main>
   );
 }
