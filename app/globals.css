@@ -108,29 +108,25 @@ img {
 }
 
 .landingNav {
-  position: fixed;
-  top: 12px;
-  left: 0;
-  z-index: 100;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  gap: 28px;
-  width: 100%;
-  padding: 0 20px;
+  gap: 40px;
+  z-index: 10;
 }
 
 .landingNav a {
-  color: #555555;
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  color: #222;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.05em;
 }
 
 .landingNav a:hover {
-  color: #111111;
+  opacity: 0.6;
 }
-
 .landingFooter {
   position: fixed;
   bottom: 10px;
