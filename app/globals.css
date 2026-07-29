@@ -1,50 +1,159 @@
-/* Einheitliches Menü oben */
+:root {
+  --white: #ffffff;
+  --black: #111111;
+  --grey: #666666;
+  --max-width: 1100px;
+  --text-width: 700px;
+}
 
-.siteNav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 18px 32px;
-  padding: 24px 20px;
+* {
   box-sizing: border-box;
 }
 
-.siteNav a {
-  color: #222;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.03em;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+  color: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
   text-decoration: none;
 }
 
-.siteNav a:hover {
-  opacity: 0.6;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-/* Neues Portfolio */
+/* ---------------- Landing ---------------- */
+
+.landingPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.landingCoverLink {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+}
+
+.landingCover {
+  width: 100%;
+  height: auto;
+}
+
+/* ---------------- Menü ---------------- */
+
+.landingNav {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 26px 20px;
+}
+
+.landingNav a {
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.landingNav a:hover {
+  color: #111;
+}
+
+/* ---------------- Footer ---------------- */
+
+.siteFooter {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 50px 20px;
+  color: #888;
+  font-size: 11px;
+}
+
+/* ---------------- Portfolio ---------------- */
 
 .portfolioPage {
-  width: min(var(--max-width), calc(100% - 48px));
+  width: min(var(--max-width), calc(100% - 40px));
   margin: 0 auto;
-  padding: 80px 0 100px;
 }
 
 .portfolioTitle {
-  margin: 50px 0;
   font-size: 36px;
   font-weight: 400;
+  margin: 50px 0;
 }
 
 .portfolioImageList {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 40px;
 }
 
 .portfolioImageList img {
   width: 100%;
   height: auto;
+}
+
+/* ---------------- Textseiten ---------------- */
+
+.textContent {
+  max-width: var(--text-width);
+  margin: 80px auto;
+  line-height: 1.8;
+}
+
+.textContent h1 {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.contactLink {
+  text-decoration: underline;
+}
+
+/* ---------------- Mobil ---------------- */
+
+@media (max-width:700px){
+
+  .landingCoverLink{
+    max-width:520px;
+  }
+
+  .landingNav{
+    gap:20px;
+    padding:18px 10px;
+  }
+
+  .landingNav a{
+    font-size:10px;
+  }
+
+  .portfolioPage{
+    width:calc(100% - 24px);
+  }
+
+  .portfolioTitle{
+    font-size:28px;
+    margin:36px 0;
+  }
+
+  .portfolioImageList{
+    gap:24px;
+  }
+
 }
