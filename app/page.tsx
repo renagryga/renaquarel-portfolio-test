@@ -9,7 +9,12 @@ export default function Home() {
       <nav className="landingNav" aria-label="Hauptnavigation">
         <a href={`${basePath}/portfolio/`}>Portfolio</a>
         <a href={`${basePath}/kontakt/`}>Kontakt</a>
-        <a href="https://renaquarel.etsy.com" target="_blank" rel="noreferrer">
+
+        <a
+          href="https://renaquarel.etsy.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Shop
         </a>
       </nav>
@@ -17,26 +22,21 @@ export default function Home() {
       <a
         href={`${basePath}/portfolio/`}
         className="landingCoverLink"
-        aria-label="Portfolio von Rena Quarel öffnen"
+        aria-label="Portfolio von Rena Gryga öffnen"
       >
         <picture>
           <source
             media="(max-width: 700px)"
-            srcSet={`${basePath}/images/hero/hero-mobile.jpg?v=40`}
+            srcSet={`${basePath}/images/hero/hero-mobile.jpg?v=50`}
           />
 
           <img
-            src={`${basePath}/images/hero/hero-desktop.jpg?v=40`}
-            alt="Portfolio von Rena Quarel – Illustratorin und Autorin"
+            src={`${basePath}/images/hero/hero-desktop.jpg?v=50`}
+            alt="Portfolio von Rena Gryga – Illustratorin und Autorin"
             className="landingCover"
           />
         </picture>
       </a>
-
-      <footer className="landingFooter">
-        <a href={`${basePath}/impressum/`}>Impressum</a>
-        <a href={`${basePath}/datenschutz/`}>Datenschutz</a>
-      </footer>
     </main>
   );
 }
