@@ -24,54 +24,27 @@
   opacity: 0.6;
 }
 
-/* Portfolio-Seite */
+/* Neues Portfolio */
 
 .portfolioPage {
-  width: 100%;
-  min-height: 100vh;
-  background: white;
+  width: min(var(--max-width), calc(100% - 48px));
+  margin: 0 auto;
+  padding: 80px 0 100px;
 }
 
 .portfolioTitle {
-  width: min(1100px, calc(100% - 40px));
-  margin: 45px auto 55px;
-  font-size: clamp(38px, 6vw, 64px);
-  line-height: 1;
-  font-weight: 600;
+  margin: 50px 0;
+  font-size: 36px;
+  font-weight: 400;
 }
 
 .portfolioImageList {
-  width: min(1100px, calc(100% - 40px));
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 36px;
 }
 
 .portfolioImageList img {
-  display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
-}
-
-@media (max-width: 700px) {
-  .siteNav {
-    gap: 12px 20px;
-    padding: 18px 16px;
-  }
-
-  .siteNav a {
-    font-size: 14px;
-  }
-
-  .portfolioTitle {
-    width: calc(100% - 32px);
-    margin: 30px auto 40px;
-  }
-
-  .portfolioImageList {
-    width: calc(100% - 24px);
-    gap: 24px;
-  }
 }
