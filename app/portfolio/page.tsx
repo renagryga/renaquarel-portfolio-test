@@ -4,6 +4,11 @@ const basePath =
     : "";
 
 const images = [
+  "09.jpg.png",
+  "10.jpg.png",
+  "11.jpg.png",
+  "12.jpg.png",
+  "13.jpg.png",
   "01.jpg.png",
   "02.jpg.png",
   "03.jpg.png",
@@ -12,11 +17,6 @@ const images = [
   "06.jpg.png",
   "07.jpg.png",
   "08.jpg.png",
-  "09.jpg.png",
-  "10.jpg.png",
-  "11.jpg.png",
-  "12.jpg.png",
-  "13.jpg.png",
 ];
 
 export default function PortfolioPage() {
