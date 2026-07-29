@@ -4,28 +4,27 @@ const basePath =
     : "";
 
 const images = [
-  "/images/portfolio/01.jpg.png",
-  "/images/portfolio/02.jpg.png",
-  "/images/portfolio/03.jpg.png",
-  "/images/portfolio/04.jpg.png",
-  "/images/portfolio/05.jpg.png",
-  "/images/portfolio/06.jpg.png",
-  "/images/portfolio/07.jpg.png",
-  "/images/portfolio/08.jpg.png",
-  "/images/portfolio/09.jpg.png",
-  "/images/portfolio/10.jpg.png",
-  "/images/portfolio/11.jpg.png",
-  "/images/portfolio/12.jpg.png",
-  "/images/portfolio/13.jpg.png",
+  "01.jpg.png",
+  "02.jpg.png",
+  "03.jpg.png",
+  "04.jpg.png",
+  "05.jpg.png",
+  "06.jpg.png",
+  "07.jpg.png",
+  "08.jpg.png",
+  "09.jpg.png",
+  "10.jpg.png",
+  "11.jpg.png",
+  "12.jpg.png",
+  "13.jpg.png",
 ];
 
 export default function PortfolioPage() {
   return (
-    <main className="portfolioPage">
-      <nav className="landingNav" aria-label="Hauptnavigation">
-        <a href={`${basePath}/`}>Startseite</a>
-        <a href={`${basePath}/portfolio/`}>Portfolio</a>
-        <a href={`${basePath}/kontakt/`}>Kontakt</a>
+    <>
+      <nav className="landingNav">
+        <a href={`${basePath}/portfolio`}>Portfolio</a>
+        <a href={`${basePath}/kontakt`}>Kontakt</a>
         <a
           href="https://renaquarel.etsy.com"
           target="_blank"
@@ -35,18 +34,23 @@ export default function PortfolioPage() {
         </a>
       </nav>
 
-      <h1 className="portfolioTitle">Portfolio</h1>
+      <main className="portfolioPage">
+        <div className="portfolioImageList">
+          {images.map((image) => (
+            <img
+              key={image}
+              src={`${basePath}/images/portfolio/${image}`}
+              alt=""
+              loading="lazy"
+            />
+          ))}
+        </div>
+      </main>
 
-      <div className="portfolioImageList">
-        {images.map((image, index) => (
-          <img
-            key={image}
-            src={`${basePath}${image}`}
-            alt={`Illustration ${index + 1}`}
-            loading={index === 0 ? "eager" : "lazy"}
-          />
-        ))}
-      </div>
-    </main>
+      <footer className="siteFooter">
+        <a href={`${basePath}/impressum`}>Impressum</a>
+        <a href={`${basePath}/datenschutz`}>Datenschutz</a>
+      </footer>
+    </>
   );
 }
