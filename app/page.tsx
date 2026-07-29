@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="landingPage">
       <a
-        href={`${basePath}/portfolio/`}
+        href={`${basePath}/portfolio`}
         className="landingCoverLink"
         aria-label="Portfolio öffnen"
       >
@@ -18,9 +18,9 @@ export default function Home() {
           />
 
           <img
+            className="landingCover"
             src={`${basePath}/images/hero/hero-desktop.PNG`}
             alt="Rena Gryga"
-            className="landingCover"
           />
         </picture>
       </a>
