@@ -5,30 +5,25 @@ const basePath =
 
 export default function Home() {
   return (
-    <main className="landing">
-      <nav className="landingNav">
-        <a href={`${basePath}/portfolio`}>Portfolio</a>
-        <a href={`${basePath}/kontakt`}>Kontakt</a>
-        <a
-          href="https://renaquarel.etsy.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Shop
-        </a>
-      </nav>
+    <main className="landingPage">
+      <a
+        href={`${basePath}/portfolio/`}
+        className="heroLink"
+        aria-label="Portfolio öffnen"
+      >
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcSet={`${basePath}/images/hero/hero-mobile.PNG`}
+          />
 
-      <picture>
-        <source
-          media="(max-width: 768px)"
-          srcSet={`${basePath}/images/hero/hero-mobile.PNG`}
-        />
-        <img
-          src={`${basePath}/images/hero/hero-desktop.PNG`}
-          alt="Rena Gryga Illustration"
-          className="heroImage"
-        />
-      </picture>
+          <img
+            src={`${basePath}/images/hero/hero-desktop.PNG`}
+            alt="Rena Quarel – Illustration und Text"
+            className="heroImage"
+          />
+        </picture>
+      </a>
     </main>
   );
 }
