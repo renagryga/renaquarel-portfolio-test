@@ -3,43 +3,38 @@ const basePath =
     ? "/renaquarel-portfolio-test"
     : "";
 
-const projects = [
-  {
-    title: "Der leere Platz",
-    href: `${basePath}/portfolio/der-leere-platz/`,
-    image: `${basePath}/images/der-leere-platz/01.JPG`,
-    alt: "Illustration aus Der leere Platz",
-  },
-  {
-    title: "Storchingo",
-    href: `${basePath}/portfolio/storchingo/`,
-    image: `${basePath}/images/storchingo/01.JPG`,
-    alt: "Illustration aus Storchingo",
-  },
-  {
-    title: "Ausgewählte Illustrationen",
-    href: `${basePath}/portfolio/illustrationen/`,
-    image: `${basePath}/images/ausgewaehlte-illustrationen/01.JPG`,
-    alt: "Ausgewählte Illustration von Rena Quarel",
-  },
+const images = [
+  "/images/portfolio/01.jpg",
+  "/images/portfolio/02.jpg",
+  "/images/portfolio/03.jpg",
+  "/images/portfolio/04.jpg",
+  "/images/portfolio/05.jpg",
+  "/images/portfolio/06.jpg",
+  "/images/portfolio/07.jpg",
+  "/images/portfolio/08.jpg",
+  "/images/portfolio/09.jpg",
+  "/images/portfolio/10.jpg",
+  "/images/portfolio/11.jpg",
+  "/images/portfolio/12.jpg",
+  "/images/portfolio/13.jpg",
 ];
 
 export default function PortfolioPage() {
   return (
-    <main className="pageShell portfolioOverview">
+    <main className="pageShell">
       <div className="pageTopline">
         <a href={`${basePath}/`}>← Start</a>
         <span>Portfolio</span>
       </div>
 
-      <div className="projectOverviewList">
-        {projects.map((project) => (
-          <article className="projectPreview" key={project.title}>
-            <a href={project.href}>
-              <img src={project.image} alt={project.alt} />
-              <h1>{project.title}</h1>
-            </a>
-          </article>
+      <div className="portfolioImageList">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={`${basePath}${image}`}
+            alt={`Portfolio ${index + 1}`}
+            loading="lazy"
+          />
         ))}
       </div>
     </main>
