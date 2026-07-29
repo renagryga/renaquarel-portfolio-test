@@ -7,8 +7,8 @@ const basePath =
     : "";
 
 export const metadata: Metadata = {
-  title: "Rena Quarel",
-  description: "Portfolio von Rena Quarel – Illustratorin und Autorin",
+  title: "Rena Gryga",
+  description: "Portfolio von Rena Gryga – Illustratorin und Autorin",
 };
 
 export const viewport: Viewport = {
@@ -23,12 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}
-      <footer className="siteFooter">
-  <a href={`${basePath}/impressum`}>Impressum</a>
-  <a href={`${basePath}/datenschutz`}>Datenschutz</a>
-</footer>
-      
+      <body>
+        {children}
+
+        <footer className="siteFooter">
+          <a href={`${basePath}/impressum/`}>Impressum</a>
+          <a href={`${basePath}/datenschutz/`}>Datenschutz</a>
+        </footer>
       </body>
     </html>
   );
