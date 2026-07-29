@@ -8,7 +8,7 @@ export default function Home() {
     <main className="landingPage">
       <a
         href={`${basePath}/portfolio/`}
-        className="heroLink"
+        className="landingCoverLink"
         aria-label="Portfolio öffnen"
       >
         <picture>
@@ -19,8 +19,8 @@ export default function Home() {
 
           <img
             src={`${basePath}/images/hero/hero-desktop.PNG`}
-            alt="Rena Quarel – Illustration und Text"
-            className="heroImage"
+            alt="Rena Gryga"
+            className="landingCover"
           />
         </picture>
       </a>
