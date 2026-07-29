@@ -75,45 +75,6 @@
     gap: 24px;
   }
 }
-/* Startseite */
-
-.landingPage {
-  width: 100%;
-  min-height: 100vh;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow: hidden;
-}
-
-.heroLink {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-}
-
-.heroLink picture {
-  display: block;
-  width: 100%;
-}
-
-.heroImage {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 100vh;
-  object-fit: contain;
-  object-position: top center;
-}
-
-/* Handy */
-
-@media (max-width: 768px) {
-  .heroImage {
-    width: 100%;
-    height: auto;
-    max-height: none;
-    object-fit: contain;
+24px;
   }
 }
