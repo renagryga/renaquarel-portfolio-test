@@ -390,4 +390,29 @@ img {
     gap: 20px;
   }
 }
+/* Portfolio: alle Bilder untereinander */
+
+.portfolioPage {
+  max-width: 1100px;
+}
+
+.portfolioImageList {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.portfolioImageList img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .portfolioImageList {
+    gap: 20px;
+  }
+}
+
 
