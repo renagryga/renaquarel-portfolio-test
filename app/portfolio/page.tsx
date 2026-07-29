@@ -36,7 +36,7 @@ export default function Portfolio() {
 
       <header className="portfolioHeader">
         <h1>Portfolio</h1>
-        <p>Illustrationen von Rena Quarel</p>
+    
       </header>
 
       <section className="portfolioGallery">
