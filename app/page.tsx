@@ -5,11 +5,10 @@ const basePath =
 
 export default function Home() {
   return (
-    <main className="landingPage">
-      <nav className="landingNav" aria-label="Hauptnavigation">
-        <a href={`${basePath}/portfolio/`}>Portfolio</a>
-        <a href={`${basePath}/kontakt/`}>Kontakt</a>
-
+    <main className="landing">
+      <nav className="landingNav">
+        <a href={`${basePath}/portfolio`}>Portfolio</a>
+        <a href={`${basePath}/kontakt`}>Kontakt</a>
         <a
           href="https://renaquarel.etsy.com"
           target="_blank"
@@ -19,24 +18,17 @@ export default function Home() {
         </a>
       </nav>
 
-      <a
-        href={`${basePath}/portfolio/`}
-        className="landingCoverLink"
-        aria-label="Portfolio von Rena Gryga öffnen"
-      >
-        <picture>
-          <source
-            media="(max-width: 700px)"
-            srcSet={`${basePath}/images/hero/hero-mobile.jpg?v=50`}
-          />
-
-          <img
-            src={`${basePath}/images/hero/hero-desktop.jpg?v=50`}
-            alt="Portfolio von Rena Gryga – Illustratorin und Autorin"
-            className="landingCover"
-          />
-        </picture>
-      </a>
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcSet={`${basePath}/images/hero/hero-mobile.PNG`}
+        />
+        <img
+          src={`${basePath}/images/hero/hero-desktop.PNG`}
+          alt="Rena Gryga Illustration"
+          className="heroImage"
+        />
+      </picture>
     </main>
   );
 }
