@@ -8,7 +8,7 @@ export default function KontaktPage() {
     <>
       <nav className="landingNav">
         <a href={`${basePath}/portfolio`}>Portfolio</a>
-        <a href={`${basePath}/kontakt`}>Kontakt</a>
+        <a href={`${basePath}/kontakt`}>Hallo</a>
         <a
           href="https://renaquarel.etsy.com"
           target="_blank"
