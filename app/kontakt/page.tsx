@@ -19,10 +19,10 @@ export default function KontaktPage() {
       </nav>
 
       <main className="textContent">
-        <h1>Kontakt</h1>
+    
 
         <p>
-          Hi, ich bin Rena – Illustratorin, Autorin, Psychotherapeutin und
+          Hallo, ich bin Rena – Illustratorin, Autorin, Psychotherapeutin und
           Mama. In meiner Arbeit verbinde ich künstlerisches Erzählen mit einem
           feinen Gespür für Gefühle, Beziehungen und kindliche Lebenswelten.
         </p>
