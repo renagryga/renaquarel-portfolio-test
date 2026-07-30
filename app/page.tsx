@@ -25,5 +25,9 @@ export default function Home() {
         </picture>
       </a>
     </main>
-  );
+  )  <footer className="siteFooter">
+        <a href={`${basePath}/impressum`}>Impressum</a>
+        <a href={`${basePath}/datenschutz`}>Datenschutz</a>
+      </footer>
 }
+
