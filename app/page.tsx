@@ -16,6 +16,7 @@ export default function Home() {
             media="(max-width: 768px)"
             srcSet={`${basePath}/images/hero/hero-mobile.PNG`}
           />
+
           <img
             className="landingCover"
             src={`${basePath}/images/hero/hero-desktop.PNG`}
@@ -31,4 +32,3 @@ export default function Home() {
     </main>
   );
 }
-  
