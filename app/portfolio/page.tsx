@@ -23,7 +23,9 @@ export default function PortfolioPage() {
   return (
     <>
       <nav className="landingNav">
-        <a href={`${basePath}/portfolio`}>Portfolio</a>
+        <a href={`${basePath}/portfolio`} className="active">
+  Portfolio
+</a>
         <a href={`${basePath}/kontakt`}>Hallo</a>
         <a
           href="https://renaquarel.etsy.com"
