@@ -103,7 +103,6 @@ img {
   color: #e5e5e5;
   font-size: 10px;
   letter-spacing: 0.05em;
-  text-decoration: none;
 }
 
 .landingFooter a:hover {
@@ -117,8 +116,16 @@ img {
   justify-content: center;
   gap: 24px;
   padding: 50px 20px;
-  color: #777777;
+  color: #d6d6d6;
   font-size: 11px;
+}
+
+.siteFooter a {
+  color: inherit;
+}
+
+.siteFooter a:hover {
+  color: #bdbdbd;
 }
 
 /* ---------------- Portfolio ---------------- */
@@ -150,6 +157,7 @@ img {
 .textContent {
   max-width: var(--text-width);
   margin: 80px auto;
+  padding: 0 28px;
   line-height: 1.8;
 }
 
@@ -164,7 +172,7 @@ img {
 
 /* ---------------- Mobil ---------------- */
 
-@media (max-width: 700px) {
+@media (max-width:700px) {
 
   .landingCoverLink {
     max-width: 520px;
@@ -192,8 +200,13 @@ img {
     gap: 24px;
   }
 
+  .textContent {
+    padding: 0 22px;
+  }
+
   .siteFooter {
     padding: 36px 16px;
+    color: #d6d6d6;
     font-size: 10px;
   }
 
