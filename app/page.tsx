@@ -16,7 +16,6 @@ export default function Home() {
             media="(max-width: 768px)"
             srcSet={`${basePath}/images/hero/hero-mobile.PNG`}
           />
-
           <img
             className="landingCover"
             src={`${basePath}/images/hero/hero-desktop.PNG`}
@@ -24,10 +23,12 @@ export default function Home() {
           />
         </picture>
       </a>
-    </main>
-  )  <footer className="siteFooter">
+
+      <footer className="landingFooter">
         <a href={`${basePath}/impressum`}>Impressum</a>
         <a href={`${basePath}/datenschutz`}>Datenschutz</a>
       </footer>
+    </main>
+  );
 }
-
+  
