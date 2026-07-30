@@ -57,17 +57,23 @@ img {
 /* ---------------- Menü ---------------- */
 
 .landingNav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   justify-content: center;
   gap: 34px;
   padding: 26px 20px;
+  background: #fff;
 }
 
 .landingNav a {
+  color: #555;
   font-size: 12px;
+  font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #555;
+  text-decoration: none;
 }
 
 .landingNav a:hover {
