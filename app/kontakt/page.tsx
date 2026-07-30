@@ -1,18 +1,10 @@
-const basePath =
-  process.env.NODE_ENV === "production"
-    ? "/renaquarel-portfolio-test"
-    : "";
-
 export default function KontaktPage() {
   return (
     <>
       <nav className="landingNav">
-        <a href={`${basePath}/portfolio`}>Portfolio</a>
+        <a href="/portfolio">Portfolio</a>
 
-        <a
-          href={`${basePath}/kontakt`}
-          className="active"
-        >
+        <a href="/kontakt" className="active">
           Hallo
         </a>
 
@@ -55,8 +47,8 @@ export default function KontaktPage() {
       </main>
 
       <footer className="siteFooter">
-        <a href={`${basePath}/impressum`}>Impressum</a>
-        <a href={`${basePath}/datenschutz`}>Datenschutz</a>
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutz">Datenschutz</a>
       </footer>
     </>
   );
