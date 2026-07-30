@@ -28,13 +28,13 @@ export default function KontaktPage() {
         </p>
 
         <p>
-          Mein Schwerpunkt liegt auf Bilderbüchern, die Themen wie Identität,
-          Anderssein, Einsamkeit und Zugehörigkeit auf eine warme und
+          Mein Schwerpunkt liegt auf Bilderbüchern, die Themen wie 
+          Anderssein, Einsamkeit und Zugehörigkeit auf eine 
           kindgerechte Weise erzählen.
         </p>
 
         <p>
-          Für Anfragen, Kooperationen und Buchprojekte freue ich mich über eine
+          Für Anfragen und Kooperationen freue ich mich über eine
           Nachricht.
         </p>
 
