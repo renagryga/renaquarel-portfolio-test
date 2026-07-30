@@ -1,8 +1,3 @@
-const basePath =
-  process.env.NODE_ENV === "production"
-    ? "/renaquarel-portfolio-test"
-    : "";
-
 const images = [
   "09.jpg.png",
   "10.jpg.png",
@@ -23,10 +18,10 @@ export default function PortfolioPage() {
   return (
     <>
       <nav className="landingNav">
-        <a href={`${basePath}/portfolio`} className="active">
-  Portfolio
-</a>
-        <a href={`${basePath}/kontakt`}>Hallo</a>
+        <a href="/portfolio" className="active">
+          Portfolio
+        </a>
+        <a href="/kontakt">Hallo</a>
         <a
           href="https://renaquarel.etsy.com"
           target="_blank"
@@ -41,7 +36,7 @@ export default function PortfolioPage() {
           {images.map((image) => (
             <img
               key={image}
-              src={`${basePath}/images/portfolio/${image}`}
+              src={`/images/portfolio/${image}`}
               alt=""
               loading="lazy"
             />
@@ -50,8 +45,8 @@ export default function PortfolioPage() {
       </main>
 
       <footer className="siteFooter">
-        <a href={`${basePath}/impressum`}>Impressum</a>
-        <a href={`${basePath}/datenschutz`}>Datenschutz</a>
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutz">Datenschutz</a>
       </footer>
     </>
   );
