@@ -7,11 +7,16 @@ export default function KontaktPage() {
   return (
     <>
       <nav className="landingNav">
-       <a href={`${basePath}/portfolio`}>Portfolio</a>
+        <a href={`${basePath}/portfolio`}>Portfolio</a>
 
-<a href={`${basePath}/kontakt`} className="active">
-  Hallo
-</a>a
+        <a
+          href={`${basePath}/kontakt`}
+          className="active"
+        >
+          Hallo
+        </a>
+
+        <a
           href="https://renaquarel.etsy.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -21,17 +26,16 @@ export default function KontaktPage() {
       </nav>
 
       <main className="textContent">
-    
-
         <p>
-          Hallo, ich bin Rena – Illustratorin, Autorin, Psychotherapeutin und
-          Mama. In meiner Arbeit verbinde ich künstlerisches Erzählen mit einem
-          feinen Gespür für Gefühle, Beziehungen und kindliche Lebenswelten.
+          Hallo, ich bin Rena – Illustratorin, Autorin,
+          Psychotherapeutin und Mama. In meiner Arbeit verbinde ich
+          künstlerisches Erzählen mit einem feinen Gespür für Gefühle,
+          Beziehungen und kindliche Lebenswelten.
         </p>
 
         <p>
-          Mein Schwerpunkt liegt auf Bilderbüchern, die Themen wie 
-          Anderssein, Einsamkeit und Zugehörigkeit auf eine 
+          Mein Schwerpunkt liegt auf Bilderbüchern, die Themen wie
+          Anderssein, Einsamkeit und Zugehörigkeit auf eine
           kindgerechte Weise erzählen.
         </p>
 
